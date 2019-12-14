@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/XC8_PIC12F683/production\Firm-TF6S.production.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>2048</length>
+      <used>691</used>
+      <free>1357</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>128</length>
+      <used>58</used>
+      <free>70</free>
+    </memory>
+  </executable>
+</project>

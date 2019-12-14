@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project>
+  <executable name="dist/XC8_PIC12F683/debug\Firm-TF12S.debug.hex">
+    <memory name="program">
+      <units>words</units>
+      <length>2048</length>
+      <used>1531</used>
+      <free>517</free>
+    </memory>
+    <memory name="data">
+      <units>bytes</units>
+      <length>128</length>
+      <used>72</used>
+      <free>56</free>
+    </memory>
+  </executable>
+</project>

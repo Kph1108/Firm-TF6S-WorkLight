@@ -1,0 +1,851 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+cinit CODE 0 10 10 B 2
+text1 CODE 0 5A1 5A1 40 2
+text2 CODE 0 661 661 27 2
+text3 CODE 0 740 740 D 2
+text4 CODE 0 75F 75F 8 2
+text5 CODE 0 6D2 6D2 20 2
+text6 CODE 0 72B 72B 15 2
+text7 CODE 0 639 639 28 2
+text8 CODE 0 74D 74D A 2
+text9 CODE 0 688 688 25 2
+text10 CODE 0 505 505 5B 2
+text11 CODE 0 6F2 6F2 20 2
+text12 CODE 0 767 767 7 2
+text13 CODE 0 5E1 5E1 2E 2
+text14 CODE 0 76E 76E 7 2
+text15 CODE 0 334 334 149 2
+text16 CODE 0 560 560 41 2
+text17 CODE 0 712 712 19 2
+text18 CODE 0 60F 60F 2A 2
+text19 CODE 0 6AD 6AD 25 2
+maintext CODE 0 47D 47D 88 2
+cstackCOMMON COMMON 1 77 77 7 1
+cstackBANK0 BANK0 1 49 49 15 1
+intentry CODE 0 4 4 B 2
+bssBANK0 BANK0 1 20 20 29 1
+stringtext STRCODE 0 100 100 234 2
+clrtext CODE 0 757 757 8 2
+bssCOMMON COMMON 1 70 70 7 1
+bssEEDATA EEDATA 3 0 2100 5 2
+$C:\Users\kylep\AppData\Local\Temp\s23c.obj
+reset_vec CODE 0 0 0 1 2
+end_init CODE 0 F F 1 2
+config CONFIG 0 2007 2007 1 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5E-6F 1
+RAM A0-BF 1
+BANK0 5E-6F 1
+BANK1 A0-BF 1
+CONST 1-3 2
+CONST 1B-FF 2
+CONST 775-7FF 2
+ENTRY 1-3 2
+ENTRY 1B-FF 2
+ENTRY 775-7FF 2
+IDLOC 2000-2003 2
+STACK A0-BF 1
+CODE 1-3 2
+CODE 1B-FF 2
+CODE 775-7FF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+EEDATA 2105-21FF 2
+STRCODE 1-3 2
+STRCODE 1B-FF 2
+STRCODE 775-7FF 2
+STRING 1-3 2
+STRING 1B-FF 2
+STRING 775-7FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+10 cinit CODE >1201:C:\Users\kylep\AppData\Local\Temp\s23c.
+10 cinit CODE >1204:C:\Users\kylep\AppData\Local\Temp\s23c.
+10 cinit CODE >1382:C:\Users\kylep\AppData\Local\Temp\s23c.
+11 cinit CODE >1383:C:\Users\kylep\AppData\Local\Temp\s23c.
+12 cinit CODE >1384:C:\Users\kylep\AppData\Local\Temp\s23c.
+13 cinit CODE >1385:C:\Users\kylep\AppData\Local\Temp\s23c.
+14 cinit CODE >1389:C:\Users\kylep\AppData\Local\Temp\s23c.
+15 cinit CODE >1388:C:\Users\kylep\AppData\Local\Temp\s23c.
+16 cinit CODE >1390:C:\Users\kylep\AppData\Local\Temp\s23c.
+17 cinit CODE >1391:C:\Users\kylep\AppData\Local\Temp\s23c.
+18 cinit CODE >1392:C:\Users\kylep\AppData\Local\Temp\s23c.
+19 cinit CODE >1398:C:\Users\kylep\AppData\Local\Temp\s23c.
+19 cinit CODE >1400:C:\Users\kylep\AppData\Local\Temp\s23c.
+1A cinit CODE >1401:C:\Users\kylep\AppData\Local\Temp\s23c.
+4 intentry CODE >26:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+6AD text19 CODE >462:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6AD text19 CODE >464:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6AF text19 CODE >465:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6B0 text19 CODE >466:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6B6 text19 CODE >467:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6B9 text19 CODE >469:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6BA text19 CODE >470:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6C0 text19 CODE >471:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6C1 text19 CODE >482:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6C3 text19 CODE >483:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6C4 text19 CODE >484:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6C9 text19 CODE >487:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6CA text19 CODE >488:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6D0 text19 CODE >489:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6D1 text19 CODE >491:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+60F text18 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+610 text18 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+611 text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+612 text18 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+613 text18 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+614 text18 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+616 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+617 text18 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+618 text18 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+619 text18 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+61B text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+61C text18 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+61D text18 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+61E text18 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+620 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+621 text18 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+622 text18 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+623 text18 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+625 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+626 text18 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+627 text18 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+628 text18 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+62A text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+62B text18 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+62C text18 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+62D text18 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+62F text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+630 text18 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+631 text18 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+632 text18 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+634 text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+635 text18 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+636 text18 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+637 text18 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+638 text18 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul8.c
+712 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+712 text17 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+714 text17 CODE >45:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+716 text17 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+71C text17 CODE >47:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+71F text17 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+722 text17 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+726 text17 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+72A text17 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\common\Umul16.c
+560 text16 CODE >314:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+560 text16 CODE >319:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+563 text16 CODE >321:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+565 text16 CODE >323:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+569 text16 CODE >327:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+56D text16 CODE >332:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+56F text16 CODE >334:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+570 text16 CODE >357:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+57F text16 CODE >359:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+57F text16 CODE >360:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+580 text16 CODE >359:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+581 text16 CODE >360:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+584 text16 CODE >362:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+586 text16 CODE >363:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+587 text16 CODE >366:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+588 text16 CODE >369:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+58B text16 CODE >371:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+58D text16 CODE >376:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+590 text16 CODE >381:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+593 text16 CODE >383:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+596 text16 CODE >385:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+599 text16 CODE >386:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+59C text16 CODE >388:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+59F text16 CODE >392:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5A0 text16 CODE >395:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+334 text15 CODE >26:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+334 text15 CODE >57:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+337 text15 CODE >59:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+339 text15 CODE >61:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+33E text15 CODE >63:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+33F text15 CODE >64:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+340 text15 CODE >66:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+340 text15 CODE >67:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+341 text15 CODE >66:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+342 text15 CODE >67:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+345 text15 CODE >70:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+346 text15 CODE >69:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+347 text15 CODE >70:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+34D text15 CODE >72:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+351 text15 CODE >74:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+352 text15 CODE >75:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+354 text15 CODE >78:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+367 text15 CODE >80:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+37A text15 CODE >82:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+37B text15 CODE >83:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+390 text15 CODE >84:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+393 text15 CODE >87:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+397 text15 CODE >90:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+39B text15 CODE >92:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+39C text15 CODE >93:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+39E text15 CODE >96:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3A1 text15 CODE >97:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3A3 text15 CODE >99:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3A6 text15 CODE >100:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3A8 text15 CODE >103:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3AC text15 CODE >104:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3AF text15 CODE >105:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3B2 text15 CODE >107:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3B5 text15 CODE >108:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3D5 text15 CODE >111:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3D7 text15 CODE >113:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3D9 text15 CODE >115:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3DA text15 CODE >116:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3DD text15 CODE >118:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3DE text15 CODE >121:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3E1 text15 CODE >123:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3E3 text15 CODE >127:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3E5 text15 CODE >132:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+3E6 text15 CODE >133:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+40C text15 CODE >135:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+40F text15 CODE >136:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+411 text15 CODE >139:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+412 text15 CODE >140:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+414 text15 CODE >143:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+415 text15 CODE >145:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+415 text15 CODE >147:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+423 text15 CODE >149:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+426 text15 CODE >150:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+428 text15 CODE >151:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+429 text15 CODE >152:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+42A text15 CODE >155:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+42C text15 CODE >157:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+432 text15 CODE >158:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+433 text15 CODE >161:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+43A text15 CODE >163:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+43B text15 CODE >164:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+43C text15 CODE >167:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+448 text15 CODE >169:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44A text15 CODE >170:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44B text15 CODE >171:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44C text15 CODE >172:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44D text15 CODE >173:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44E text15 CODE >174:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+44F text15 CODE >177:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+459 text15 CODE >178:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+45A text15 CODE >180:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+467 text15 CODE >181:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+469 text15 CODE >182:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+46B text15 CODE >183:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+46C text15 CODE >184:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+46D text15 CODE >185:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+46F text15 CODE >186:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+470 text15 CODE >187:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+471 text15 CODE >189:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+472 text15 CODE >191:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\interrupts.c
+76E text14 CODE >18:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\system.c
+76E text14 CODE >27:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\system.c
+771 text14 CODE >28:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\system.c
+771 text14 CODE >29:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\system.c
+5E1 text13 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5E2 text13 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5E4 text13 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5E7 text13 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5EC text13 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5ED text13 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5F2 text13 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5F5 text13 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+5FE text13 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+600 text13 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+604 text13 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+605 text13 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+607 text13 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+609 text13 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+60A text13 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+60B text13 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+60E text13 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+767 text12 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+768 text12 CODE >130:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6F2 text11 CODE >424:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6F2 text11 CODE >426:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6F6 text11 CODE >427:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6F7 text11 CODE >429:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+700 text11 CODE >430:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+709 text11 CODE >427:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+70E text11 CODE >432:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+505 text10 CODE >493:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+505 text10 CODE >495:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+50B text10 CODE >496:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+50D text10 CODE >499:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+511 text10 CODE >501:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+512 text10 CODE >502:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+514 text10 CODE >503:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+517 text10 CODE >506:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+51F text10 CODE >508:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+522 text10 CODE >509:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+524 text10 CODE >510:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+526 text10 CODE >511:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+527 text10 CODE >512:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+528 text10 CODE >513:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+529 text10 CODE >514:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+531 text10 CODE >516:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+534 text10 CODE >517:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+536 text10 CODE >519:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+537 text10 CODE >520:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+539 text10 CODE >521:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+53A text10 CODE >522:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+542 text10 CODE >524:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+545 text10 CODE >525:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+547 text10 CODE >526:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+549 text10 CODE >527:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+54C text10 CODE >530:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+554 text10 CODE >532:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+557 text10 CODE >533:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+559 text10 CODE >534:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+55B text10 CODE >568:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+55D text10 CODE >569:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+55E text10 CODE >570:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+55F text10 CODE >572:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+688 text9 CODE >435:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+688 text9 CODE >438:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+68E text9 CODE >446:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+690 text9 CODE >448:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+692 text9 CODE >449:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+693 text9 CODE >448:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+695 text9 CODE >449:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+699 text9 CODE >450:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+69C text9 CODE >452:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+69F text9 CODE >454:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6A1 text9 CODE >455:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6A2 text9 CODE >454:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6A4 text9 CODE >455:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6A8 text9 CODE >456:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6AB text9 CODE >458:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6AC text9 CODE >459:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+74D text8 CODE >397:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+74D text8 CODE >399:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+74F text8 CODE >400:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+753 text8 CODE >402:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+755 text8 CODE >403:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+756 text8 CODE >400:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+639 text7 CODE >22:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+639 text7 CODE >32:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+63C text7 CODE >33:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+63E text7 CODE >34:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+640 text7 CODE >35:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+642 text7 CODE >36:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+644 text7 CODE >37:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+646 text7 CODE >38:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+648 text7 CODE >39:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+64A text7 CODE >41:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+64C text7 CODE >42:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+650 text7 CODE >43:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+651 text7 CODE >46:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+652 text7 CODE >47:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+653 text7 CODE >48:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+655 text7 CODE >49:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+656 text7 CODE >50:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+658 text7 CODE >51:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+65A text7 CODE >52:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+65B text7 CODE >53:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+65D text7 CODE >54:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+65E text7 CODE >55:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+660 text7 CODE >56:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\user.c
+72B text6 CODE >575:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+72B text6 CODE >577:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+72D text6 CODE >578:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+730 text6 CODE >579:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+732 text6 CODE >582:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+736 text6 CODE >583:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+737 text6 CODE >584:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+73D text6 CODE >585:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+73F text6 CODE >586:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+6D2 text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6D3 text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6D5 text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6D8 text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6DC text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6E1 text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6E4 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6E5 text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6E6 text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6EF text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+6F1 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+75F text4 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+760 text4 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+765 text4 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+766 text4 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.45\sources\pic\eeprom.c
+740 text3 CODE >409:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+740 text3 CODE >411:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+741 text3 CODE >412:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+743 text3 CODE >414:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+745 text3 CODE >415:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+746 text3 CODE >418:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+747 text3 CODE >420:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+74C text3 CODE >421:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+661 text2 CODE >588:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+661 text2 CODE >591:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+664 text2 CODE >592:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+667 text2 CODE >593:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+668 text2 CODE >594:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+669 text2 CODE >596:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+673 text2 CODE >597:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+67D text2 CODE >594:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+682 text2 CODE >599:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+686 text2 CODE >600:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+687 text2 CODE >601:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5A1 text1 CODE >314:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5A1 text1 CODE >319:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5A4 text1 CODE >321:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5A6 text1 CODE >323:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5AA text1 CODE >327:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5AE text1 CODE >332:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5B0 text1 CODE >334:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5B1 text1 CODE >357:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5BF text1 CODE >359:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5BF text1 CODE >360:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C0 text1 CODE >359:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C1 text1 CODE >360:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C4 text1 CODE >362:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C6 text1 CODE >363:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C7 text1 CODE >366:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5C8 text1 CODE >369:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5CB text1 CODE >371:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5CD text1 CODE >376:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5D0 text1 CODE >381:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5D3 text1 CODE >383:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5D6 text1 CODE >385:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5D9 text1 CODE >386:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5DC text1 CODE >388:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5DF text1 CODE >392:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+5E0 text1 CODE >395:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+47D maintext CODE >606:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+47D maintext CODE >610:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+47E maintext CODE >612:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+47F maintext CODE >613:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+480 maintext CODE >614:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+482 maintext CODE >618:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+484 maintext CODE >619:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+485 maintext CODE >623:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+486 maintext CODE >624:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+48D maintext CODE >626:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+48F maintext CODE >627:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+490 maintext CODE >628:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+491 maintext CODE >630:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+497 maintext CODE >632:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+498 maintext CODE >633:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+49F maintext CODE >634:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4A1 maintext CODE >635:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4A2 maintext CODE >636:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4A7 maintext CODE >638:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4AC maintext CODE >639:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4AD maintext CODE >640:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4B4 maintext CODE >641:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4B9 maintext CODE >642:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4BB maintext CODE >643:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4BC maintext CODE >644:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4BD maintext CODE >645:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4BE maintext CODE >647:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4C2 maintext CODE >649:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4C3 maintext CODE >650:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4CA maintext CODE >651:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4CE maintext CODE >653:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4D0 maintext CODE >654:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4D1 maintext CODE >655:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4D2 maintext CODE >656:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4D4 maintext CODE >661:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4E2 maintext CODE >663:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4E4 maintext CODE >664:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4E5 maintext CODE >665:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4E6 maintext CODE >668:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4ED maintext CODE >670:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4EE maintext CODE >671:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F0 maintext CODE >672:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F1 maintext CODE >675:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F4 maintext CODE >677:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F6 maintext CODE >679:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F7 maintext CODE >680:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4F8 maintext CODE >682:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4FB maintext CODE >683:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4FC maintext CODE >686:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+4FF maintext CODE >688:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+501 maintext CODE >689:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+502 maintext CODE >690:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+503 maintext CODE >691:C:\Users\kylep\Box Sync\Box Sync\Feniex Electrical Files\WorkingFolder-Kyle\Firm-TF12S\main.c
+757 clrtext CODE >1369:C:\Users\kylep\AppData\Local\Temp\s23c.
+757 clrtext CODE >1370:C:\Users\kylep\AppData\Local\Temp\s23c.
+758 clrtext CODE >1371:C:\Users\kylep\AppData\Local\Temp\s23c.
+758 clrtext CODE >1372:C:\Users\kylep\AppData\Local\Temp\s23c.
+759 clrtext CODE >1373:C:\Users\kylep\AppData\Local\Temp\s23c.
+75A clrtext CODE >1374:C:\Users\kylep\AppData\Local\Temp\s23c.
+75B clrtext CODE >1375:C:\Users\kylep\AppData\Local\Temp\s23c.
+75C clrtext CODE >1376:C:\Users\kylep\AppData\Local\Temp\s23c.
+75D clrtext CODE >1377:C:\Users\kylep\AppData\Local\Temp\s23c.
+75E clrtext CODE >1378:C:\Users\kylep\AppData\Local\Temp\s23c.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7E 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 5 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_ReWriteEEPROM E24 0 CODE 0 text11 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_SYNC_PULSE_Counter 71 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+SetOUTPUT@temporaryGPIO 25 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_memcpyee 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_RD 4E0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WR 4E1 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bDualColor 3F 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+i1_SetOUTPUT AC0 0 CODE 0 text16 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_GPIO 5 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_TMR0 1 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WREN 4E2 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___sp 0 0 STACK 2 stack C:\Users\kylep\AppData\Local\Temp\s23c.obj
+_main 8FA 0 CODE 0 maintext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+btemp 7E 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_SYNC_SENT 3D 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_TRISIObits 85 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+start 1E 0 CODE 0 init C:\Users\kylep\AppData\Local\Temp\s23c.obj
+__size_of___ctoee 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of___eetoc 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+memcpyee@to 56 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_WaitForSYNC_PU 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+?___wmul 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_OPTION_REGbits 81 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_Read_Mode_Input 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__HbssEEDATA 0 0 ABS 0 bssEEDATA -
+__size_of_Initial_Start 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+isr@temp_data1 7D 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_Selected_Mode_Type 37 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_EEprom_mode 4 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_ConfigureOscillator EEA 0 CODE 0 text14 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+intlevel0 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+intlevel1 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+intlevel2 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+intlevel3 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+intlevel4 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+intlevel5 0 0 ENTRY 0 functab C:\Users\kylep\AppData\Local\Temp\s23c.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_InitApp C72 0 CODE 0 text7 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___bmul@multiplicand 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_OSCCONbits 8F 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_Update_ComboPattern_Index A0A 0 CODE 0 text10 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hfunctab 0 0 ENTRY 0 functab -
+__LbssEEDATA 0 0 ABS 0 bssEEDATA -
+_GLOBAL_sub_patterns_column_index 76 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_memcpyee BC2 0 CODE 0 text13 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_Initial_Start D10 0 CODE 0 text2 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_memcpyee C1E 0 CODE 0 text13 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___wmul@multiplicand 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_MODE1_PRESSED 28 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_InPhase_copy 20 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_OUTPUT_BUFFER 74 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_MODE2_counter 33 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_CMCON0 19 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ROM_Sub_Patterns 48C 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hpa_nodes0 0 0 ABS 0 pa_nodes0 -
+__end_of___bmul C72 0 CODE 0 text18 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of___wmul E56 0 CODE 0 text17 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_combo_patterns_column_index 73 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_Selected_Mode_Number 70 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EECON1 9C 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EECON2 9D 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EEDATA 9A 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_CP$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_combo_patterns_index_copy 44 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+___bmul@multiplier 79 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of___ctoee EDC 0 CODE 0 text12 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of___eetoc ECE 0 CODE 0 text4 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_SetOUTPUT BC2 0 CODE 0 text1 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_ROM_COMBO_Patterns 48C 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_SetOUTPUT 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+memcpyee@ptr 55 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_INTCON B 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lpa_nodes0 0 0 ABS 0 pa_nodes0 -
+_GLOBAL_MODE2_LOW_counter 30 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_Update_Input_Mode_Type 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_INC_EEPROM_MODE D5A 0 CODE 0 text9 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_SetOUTPUT B42 0 CODE 0 text1 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+start_initialization 20 0 CODE 0 cinit dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_OSCCON 8F 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EEprom_Written_Flag 8 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ROM_COMBO_Patterns 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_Dummy_Counter 3B 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_WriteEEPROMDefaults 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EEprom_InPhase 0 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+clear_ram0 EAE 0 CODE 0 clrtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__pcstackBANK0 49 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_TRISIO 85 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WDTCON 18 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_ROM_Sub_Patterns 57A 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\kylep\AppData\Local\Temp\s23c.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+_GLOBAL_SYNC_Line_counter 34 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hcinit 36 0 CODE 0 cinit -
+_bGLOBAL_END_OF_CYCLE_COND1 42 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_END_OF_CYCLE_COND2 41 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+SetOUTPUT@pwmCounter 24 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_INC_EEPROM_MODE D10 0 CODE 0 text9 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+eecpymem@from 53 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+eecpymem@size 54 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+___eetoc@addr 57 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___eetoc@data 58 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GPIObits 5 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_IS_PROGRAMMING 2A 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+Initial_Start@i 5C 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lcinit 20 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__end_ofi1_SetOUTPUT B42 0 CODE 0 text16 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WriteEEPROMDefaults E80 0 CODE 0 text3 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_INTCONbits B 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1E 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1E 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Ltext 0 0 ABS 0 text -
+_bGLOBAL_SYNC_Line_PRESSED 26 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___bmul C1E 0 CODE 0 text18 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___wmul E24 0 CODE 0 text17 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WPU 95 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7E 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 2105 0 ABS 0 - -
+_isr 668 0 CODE 0 text15 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_Dummy_Counter2 3A 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_DISABLE_SYNC_Line_PRESSED 2D 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+saved_w 7E 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_OUTPUT_BUFFER_CHANGED 48 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_InPhase 40 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_WaitForSYNC_PU E9A 0 CODE 0 text8 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_sub_patterns_index 75 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_Selected_Mode_Type_copy 36 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_sub_patterns_timer 46 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_isr 8FA 0 CODE 0 text15 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_ENABLE_LEDS 29 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 200 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\kylep\AppData\Local\Temp\s23c.obj
+__size_of_eecpymem 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of___bmul 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of___wmul 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_GLOBAL_Mode_copy 22 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_InitApp 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_INC_EEPROM_MODE 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext10 A0A 0 CODE 0 text10 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext11 DE4 0 CODE 0 text11 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext12 ECE 0 CODE 0 text12 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext13 BC2 0 CODE 0 text13 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext14 EDC 0 CODE 0 text14 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext15 668 0 CODE 0 text15 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext16 AC0 0 CODE 0 text16 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext17 E24 0 CODE 0 text17 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext18 C1E 0 CODE 0 text18 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext19 D5A 0 CODE 0 text19 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___ctoee ECE 0 CODE 0 text12 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___eetoc EBE 0 CODE 0 text4 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__pmaintext 8FA 0 CODE 0 maintext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___ctoee@addr 58 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___ctoee@data 57 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CPD$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_WaitForSYNC_PU EAE 0 CODE 0 text8 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___wmul@multiplier 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_MODE2_PRESSED 27 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_WriteEEPROMDefaults E9A 0 CODE 0 text3 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_Update_Input_Mode_Type E56 0 CODE 0 text6 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_CHANGING_PATTERN_Enforce 2B 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_OUTPUT_BUFFER_COPY 3C 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+stackhi 0 0 ABS 0 - C:\Users\kylep\AppData\Local\Temp\s23c.obj
+stacklo 0 0 ABS 0 - C:\Users\kylep\AppData\Local\Temp\s23c.obj
+isr@tenMSCounter 39 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_eecpymem DA4 0 CODE 0 text5 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of__stringtab 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 70 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+ReWriteEEPROM@i 59 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_bGLOBAL_STEADY_ON 47 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+INC_EEPROM_MODE@Temp_Mode_Data 5A 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lend_init 1E 0 CODE 0 end_init -
+__end_of_eecpymem DE4 0 CODE 0 text5 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pbssEEDATA 0 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_ofi1_SetOUTPUT 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+end_of_initialization 32 0 CODE 0 cinit dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hintentry 1E 0 CODE 0 intentry -
+_GLOBAL_MODE1_counter 35 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ReWriteEEPROM DE4 0 CODE 0 text11 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lstrings 0 0 ABS 0 strings -
+_GLOBAL_sub_patterns_index_copy 45 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_GLOBAL_CHANNELS_EN_DUAL 3E 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_CHANNELS_EN_copy 2E 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_Update_ComboPattern_Index AC0 0 CODE 0 text10 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+main@tempvar1 5D 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext1 B42 0 CODE 0 text1 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext2 CC2 0 CODE 0 text2 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext3 E80 0 CODE 0 text3 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext4 EBE 0 CODE 0 text4 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext5 DA4 0 CODE 0 text5 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext6 E56 0 CODE 0 text6 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext7 C72 0 CODE 0 text7 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext8 E9A 0 CODE 0 text8 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__ptext9 D10 0 CODE 0 text9 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_InitApp CC2 0 CODE 0 text7 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_Read_Mode_Input DA4 0 CODE 0 text19 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+_GLOBAL_CHANNELS_EN 2F 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext 200 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_ConfigureOscillator 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+memcpyee@from 53 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+memcpyee@size 54 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+Initial_Start@read_data 5B 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_WDTE$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of__initialization 32 0 CODE 0 cinit dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Lfunctab 0 0 ENTRY 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_GLOBAL_SYNC_Line_LOW_counter 31 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__pcstackCOMMON 77 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_Initial_Start CC2 0 CODE 0 text2 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hend_init 20 0 CODE 0 end_init -
+_Read_Mode_Input D5A 0 CODE 0 text19 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_main A0A 0 CODE 0 maintext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_combo_patterns_index 43 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ANSEL 9F 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_CARRY 18 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ConfigureOscillator EDC 0 CODE 0 text14 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_EEADR 9B 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+WaitForSYNC_PU@temp001 53 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_Update_ComboPattern_Index 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_ROM_Sub_Patterns_Time 668 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__pintentry 8 0 CODE 0 intentry dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_channelToBeDisplayed 72 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_isr 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__size_of_ReWriteEEPROM 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+eecpymem@cp 55 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+eecpymem@to 56 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__initialization 20 0 CODE 0 cinit dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___bmul@product 78 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+_bGLOBAL_CHANGING_PATTERN 2C 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+___wmul@product 7B 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+__end_of_Update_Input_Mode_Type E80 0 CODE 0 text6 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_MODE1_LOW_counter 32 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_ROM_Sub_Patterns_Time 57A 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+_GLOBAL_combo_patterns_counter 38 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\Firm-TF12S.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text15 0 334 668 441 2
+intentry 0 4 8 17 2
+reset_vec 0 0 0 1 2
+bssBANK0 1 20 20 3E 1
+stringtext 0 100 200 234 2
+bssCOMMON 1 70 70 E 1
+bssEEDATA 3 0 4200 5 2
+config 0 2007 400E 1 2

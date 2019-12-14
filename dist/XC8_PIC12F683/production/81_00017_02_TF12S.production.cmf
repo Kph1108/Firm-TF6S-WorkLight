@@ -1,0 +1,793 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\faithc\AppData\Local\Temp\scl4.obj
+reset_vec CODE 0 0 0 1 2
+end_init CODE 0 F F 1 2
+config CONFIG 0 2007 2007 1 2
+$dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+cinit CODE 0 10 10 B 2
+text1 CODE 0 714 714 29 2
+text2 CODE 0 73D 73D 27 2
+text3 CODE 0 4C 4C D 2
+text4 CODE 0 59 59 A 2
+text5 CODE 0 1B 1B 1C 2
+text6 CODE 0 37 37 15 2
+text7 CODE 0 764 764 27 2
+text8 CODE 0 63 63 A 2
+text9 CODE 0 78B 78B 25 2
+text10 CODE 0 667 667 2D 2
+text11 CODE 0 7D5 7D5 23 2
+text12 CODE 0 6D 6D 7 2
+text13 CODE 0 694 694 2C 2
+text14 CODE 0 74 74 7 2
+text15 CODE 0 4A6 4A6 13D 2
+text16 CODE 0 6C0 6C0 2A 2
+text17 CODE 0 6EA 6EA 2A 2
+text18 CODE 0 7B0 7B0 25 2
+maintext CODE 0 5E3 5E3 84 2
+cstackCOMMON COMMON 1 70 70 6 1
+cstackBANK0 BANK0 1 46 46 15 1
+intentry CODE 0 4 4 B 2
+bssBANK0 BANK0 1 20 20 26 1
+stringtext STRCODE 0 100 100 3A6 2
+clrtext CODE 0 7F8 7F8 8 2
+bssCOMMON COMMON 1 76 76 4 1
+bssEEDATA EEDATA 3 0 2100 5 2
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 5B-6F 1
+RAM A0-BF 1
+BANK0 5B-6F 1
+BANK1 A0-BF 1
+CONST 1-3 2
+CONST 7B-FF 2
+ENTRY 1-3 2
+ENTRY 7B-FF 2
+IDLOC 2000-2003 2
+STACK A0-BF 1
+CODE 1-3 2
+CODE 7B-FF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+COMMON 7A-7D 1
+EEDATA 2105-21FF 2
+STRCODE 1-3 2
+STRCODE 7B-FF 2
+STRING 1-3 2
+STRING 7B-FF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+10 cinit CODE >1580:C:\Users\faithc\AppData\Local\Temp\scl4.
+10 cinit CODE >1583:C:\Users\faithc\AppData\Local\Temp\scl4.
+10 cinit CODE >1743:C:\Users\faithc\AppData\Local\Temp\scl4.
+11 cinit CODE >1744:C:\Users\faithc\AppData\Local\Temp\scl4.
+12 cinit CODE >1745:C:\Users\faithc\AppData\Local\Temp\scl4.
+13 cinit CODE >1746:C:\Users\faithc\AppData\Local\Temp\scl4.
+14 cinit CODE >1750:C:\Users\faithc\AppData\Local\Temp\scl4.
+15 cinit CODE >1749:C:\Users\faithc\AppData\Local\Temp\scl4.
+16 cinit CODE >1751:C:\Users\faithc\AppData\Local\Temp\scl4.
+17 cinit CODE >1752:C:\Users\faithc\AppData\Local\Temp\scl4.
+18 cinit CODE >1753:C:\Users\faithc\AppData\Local\Temp\scl4.
+19 cinit CODE >1759:C:\Users\faithc\AppData\Local\Temp\scl4.
+19 cinit CODE >1761:C:\Users\faithc\AppData\Local\Temp\scl4.
+1A cinit CODE >1762:C:\Users\faithc\AppData\Local\Temp\scl4.
+4 intentry CODE >26:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+7B0 text18 CODE >505:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7B0 text18 CODE >507:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7B2 text18 CODE >508:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7B3 text18 CODE >509:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7B9 text18 CODE >510:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7BC text18 CODE >512:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7BD text18 CODE >513:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7C3 text18 CODE >514:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7C4 text18 CODE >525:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7C6 text18 CODE >526:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7C7 text18 CODE >527:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7CC text18 CODE >530:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7CD text18 CODE >531:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7D3 text18 CODE >532:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7D4 text18 CODE >534:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6EA text17 CODE >4:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6EB text17 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6EC text17 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6ED text17 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6EE text17 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6EF text17 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F1 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F2 text17 CODE >14:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F3 text17 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F4 text17 CODE >16:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F6 text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F7 text17 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F8 text17 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6F9 text17 CODE >20:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6FB text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6FC text17 CODE >22:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6FD text17 CODE >23:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6FE text17 CODE >24:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+700 text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+701 text17 CODE >26:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+702 text17 CODE >27:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+703 text17 CODE >28:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+705 text17 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+706 text17 CODE >30:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+707 text17 CODE >31:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+708 text17 CODE >32:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+70A text17 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+70B text17 CODE >34:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+70C text17 CODE >35:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+70D text17 CODE >36:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+70F text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+710 text17 CODE >38:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+711 text17 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+712 text17 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+713 text17 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\common\Umul8.c
+6C0 text16 CODE >409:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6C0 text16 CODE >411:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6C1 text16 CODE >413:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6C4 text16 CODE >415:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6C8 text16 CODE >417:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6D4 text16 CODE >418:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6D6 text16 CODE >420:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6D8 text16 CODE >421:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6D9 text16 CODE >424:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6DC text16 CODE >426:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6DF text16 CODE >428:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6E2 text16 CODE >429:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6E5 text16 CODE >431:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6E8 text16 CODE >435:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6E9 text16 CODE >438:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+4A6 text15 CODE >26:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4A6 text15 CODE >54:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4A9 text15 CODE >56:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4AB text15 CODE >57:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4B0 text15 CODE >59:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4B1 text15 CODE >60:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4B2 text15 CODE >62:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4B9 text15 CODE >64:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4BD text15 CODE >66:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4BE text15 CODE >67:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4C0 text15 CODE >70:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4D3 text15 CODE >72:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4E6 text15 CODE >74:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4E7 text15 CODE >75:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4FC text15 CODE >76:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+4FF text15 CODE >79:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+503 text15 CODE >82:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+507 text15 CODE >84:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+508 text15 CODE >85:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+50A text15 CODE >88:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+50D text15 CODE >89:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+50F text15 CODE >91:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+512 text15 CODE >92:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+514 text15 CODE >95:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+518 text15 CODE >96:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+51B text15 CODE >97:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+51E text15 CODE >99:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+521 text15 CODE >100:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+546 text15 CODE >102:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+547 text15 CODE >103:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+572 text15 CODE >105:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+575 text15 CODE >106:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+577 text15 CODE >109:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+578 text15 CODE >110:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+57A text15 CODE >113:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+57B text15 CODE >115:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+57B text15 CODE >117:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+589 text15 CODE >119:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+58C text15 CODE >120:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+58E text15 CODE >121:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+58F text15 CODE >122:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+590 text15 CODE >125:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+592 text15 CODE >127:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+598 text15 CODE >128:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+599 text15 CODE >131:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5A0 text15 CODE >133:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5A1 text15 CODE >134:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5A2 text15 CODE >137:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5AE text15 CODE >139:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B0 text15 CODE >140:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B1 text15 CODE >141:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B2 text15 CODE >142:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B3 text15 CODE >143:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B4 text15 CODE >144:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5B5 text15 CODE >147:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5BF text15 CODE >148:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5C0 text15 CODE >150:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5CD text15 CODE >151:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5CF text15 CODE >152:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D1 text15 CODE >153:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D2 text15 CODE >154:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D3 text15 CODE >155:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D5 text15 CODE >156:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D6 text15 CODE >157:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D7 text15 CODE >158:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+5D8 text15 CODE >160:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\interrupts.c
+74 text14 CODE >18:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\system.c
+74 text14 CODE >27:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\system.c
+77 text14 CODE >28:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\system.c
+77 text14 CODE >29:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\system.c
+694 text13 CODE >39:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+695 text13 CODE >41:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+697 text13 CODE >43:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+69A text13 CODE >44:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+69F text13 CODE >46:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6A0 text13 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6A4 text13 CODE >49:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6A6 text13 CODE >50:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6AF text13 CODE >51:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6B1 text13 CODE >52:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6B5 text13 CODE >53:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6B6 text13 CODE >54:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6B8 text13 CODE >55:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6BA text13 CODE >56:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6BB text13 CODE >57:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6BC text13 CODE >58:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6BF text13 CODE >48:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6D text12 CODE >128:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+6E text12 CODE >130:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+7D5 text11 CODE >467:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7D5 text11 CODE >469:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7D9 text11 CODE >470:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7DB text11 CODE >472:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7E4 text11 CODE >473:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7EE text11 CODE >470:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7F4 text11 CODE >475:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+667 text10 CODE >536:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+667 text10 CODE >538:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+66E text10 CODE >539:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+672 text10 CODE >541:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+674 text10 CODE >542:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+676 text10 CODE >545:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+679 text10 CODE >546:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+67B text10 CODE >547:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+67F text10 CODE >549:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+681 text10 CODE >552:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+683 text10 CODE >554:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+687 text10 CODE >556:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+689 text10 CODE >557:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+68B text10 CODE >558:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+68C text10 CODE >560:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+68D text10 CODE >561:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+68F text10 CODE >562:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+691 text10 CODE >563:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+692 text10 CODE >564:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+693 text10 CODE >565:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+78B text9 CODE >478:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+78B text9 CODE >481:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+791 text9 CODE >489:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+793 text9 CODE >491:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+795 text9 CODE >492:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+796 text9 CODE >491:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+798 text9 CODE >492:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+79C text9 CODE >493:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+79F text9 CODE >495:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7A2 text9 CODE >497:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7A4 text9 CODE >498:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7A5 text9 CODE >497:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7A7 text9 CODE >498:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7AB text9 CODE >499:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7AE text9 CODE >501:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7AF text9 CODE >502:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+63 text8 CODE >440:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+63 text8 CODE >442:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+64 text8 CODE >443:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+68 text8 CODE >445:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6B text8 CODE >446:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+6C text8 CODE >443:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+764 text7 CODE >22:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+764 text7 CODE >32:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+767 text7 CODE >33:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+769 text7 CODE >34:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+76B text7 CODE >35:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+76D text7 CODE >36:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+76F text7 CODE >37:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+771 text7 CODE >38:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+773 text7 CODE >39:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+775 text7 CODE >41:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+777 text7 CODE >42:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+779 text7 CODE >43:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+77A text7 CODE >46:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+77B text7 CODE >47:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+77C text7 CODE >48:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+77E text7 CODE >49:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+77F text7 CODE >50:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+781 text7 CODE >51:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+783 text7 CODE >52:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+784 text7 CODE >53:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+787 text7 CODE >54:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+788 text7 CODE >55:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+78A text7 CODE >56:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\user.c
+37 text6 CODE >568:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+37 text6 CODE >570:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+39 text6 CODE >571:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+3C text6 CODE >572:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+3E text6 CODE >575:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+42 text6 CODE >576:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+43 text6 CODE >577:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+49 text6 CODE >578:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+4B text6 CODE >579:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+1B text5 CODE >6:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+1C text5 CODE >8:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+1E text5 CODE >10:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+21 text5 CODE >11:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+23 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+27 text5 CODE >13:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+29 text5 CODE >15:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+2A text5 CODE >17:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+2B text5 CODE >18:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+34 text5 CODE >19:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+36 text5 CODE >12:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+59 text4 CODE >96:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+5B text4 CODE >99:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+60 text4 CODE >100:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+62 text4 CODE >101:C:\Program Files (x86)\Microchip\xc8\v1.38\sources\pic\eeprom.c
+4C text3 CODE >452:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+4C text3 CODE >454:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+4D text3 CODE >455:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+4F text3 CODE >457:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+51 text3 CODE >458:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+52 text3 CODE >461:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+53 text3 CODE >463:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+58 text3 CODE >464:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+73D text2 CODE >581:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+73D text2 CODE >584:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+740 text2 CODE >585:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+743 text2 CODE >586:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+744 text2 CODE >587:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+745 text2 CODE >589:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+74F text2 CODE >590:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+759 text2 CODE >587:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+75E text2 CODE >592:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+762 text2 CODE >593:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+763 text2 CODE >594:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+714 text1 CODE >409:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+714 text1 CODE >413:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+717 text1 CODE >415:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+71B text1 CODE >417:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+727 text1 CODE >418:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+729 text1 CODE >420:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+72B text1 CODE >421:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+72C text1 CODE >424:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+72F text1 CODE >426:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+732 text1 CODE >428:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+735 text1 CODE >429:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+738 text1 CODE >431:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+73B text1 CODE >435:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+73C text1 CODE >438:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E3 maintext CODE >599:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E3 maintext CODE >603:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E4 maintext CODE >605:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E5 maintext CODE >606:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E6 maintext CODE >607:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5E8 maintext CODE >611:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5EA maintext CODE >612:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5EB maintext CODE >616:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5EC maintext CODE >617:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5F3 maintext CODE >619:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5F5 maintext CODE >620:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5F6 maintext CODE >621:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5F7 maintext CODE >623:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5FD maintext CODE >625:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+5FE maintext CODE >626:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+605 maintext CODE >627:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+607 maintext CODE >628:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+608 maintext CODE >629:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+60D maintext CODE >631:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+60E maintext CODE >632:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+615 maintext CODE >633:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+61B maintext CODE >634:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+61D maintext CODE >635:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+61E maintext CODE >636:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+61F maintext CODE >638:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+624 maintext CODE >640:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+625 maintext CODE >641:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+62C maintext CODE >642:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+630 maintext CODE >644:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+632 maintext CODE >645:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+633 maintext CODE >646:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+634 maintext CODE >647:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+636 maintext CODE >652:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+644 maintext CODE >654:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+646 maintext CODE >655:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+647 maintext CODE >656:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+648 maintext CODE >659:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+64F maintext CODE >661:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+650 maintext CODE >662:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+652 maintext CODE >663:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+653 maintext CODE >666:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+656 maintext CODE >668:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+658 maintext CODE >670:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+659 maintext CODE >671:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+65A maintext CODE >673:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+65D maintext CODE >674:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+65E maintext CODE >677:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+661 maintext CODE >679:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+663 maintext CODE >680:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+664 maintext CODE >681:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+665 maintext CODE >682:C:\Users\faithc\Box Sync\Feniex Firmware Files\FUSION\TF12S\81_00017_02_TF12S\main.c
+7F8 clrtext CODE >1730:C:\Users\faithc\AppData\Local\Temp\scl4.
+7F8 clrtext CODE >1731:C:\Users\faithc\AppData\Local\Temp\scl4.
+7F9 clrtext CODE >1732:C:\Users\faithc\AppData\Local\Temp\scl4.
+7F9 clrtext CODE >1733:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FA clrtext CODE >1734:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FB clrtext CODE >1735:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FC clrtext CODE >1736:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FD clrtext CODE >1737:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FE clrtext CODE >1738:C:\Users\faithc\AppData\Local\Temp\scl4.
+7FF clrtext CODE >1739:C:\Users\faithc\AppData\Local\Temp\scl4.
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hspace_0 2008 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 5 0 ABS 0 - -
+__CFG_IESO$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_ReWriteEEPROM FF0 0 CODE 0 text11 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_SYNC_PULSE_Counter 76 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+SetOUTPUT@temporaryGPIO 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__size_of_memcpyee 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_RD 4E0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WR 4E1 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ltemp0 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ltemp1 82 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ltemp2 86 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ltemp3 80 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lstringtext 0 0 ABS 0 stringtext -
+i1_SetOUTPUT D80 0 CODE 0 text16 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hstrings 0 0 ABS 0 strings -
+_GPIO 5 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_TMR0 1 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WREN 4E2 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___sp 0 0 STACK 2 stack C:\Users\faithc\AppData\Local\Temp\scl4.obj
+_main BC6 0 CODE 0 maintext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+btemp 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_SYNC_SENT 45 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ltemp 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_TRISIObits 85 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+start 1E 0 CODE 0 init C:\Users\faithc\AppData\Local\Temp\scl4.obj
+ttemp 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of___ctoee 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of___eetoc 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+memcpyee@to 53 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_main 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_WaitForSYNC_PU 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__HbssCOMMON 0 0 ABS 0 bssCOMMON -
+_OPTION_REGbits 81 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_Read_Mode_Input 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__HbssEEDATA 0 0 ABS 0 bssEEDATA -
+__size_of_Initial_Start 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hpa_nodes 0 0 ABS 0 pa_nodes -
+isr@temp_data1 73 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_Selected_Mode_Type 2F 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hpowerup 0 0 CODE 0 powerup -
+_EEprom_mode 4 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_ConfigureOscillator F6 0 CODE 0 text14 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ttemp0 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ttemp1 81 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ttemp2 84 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ttemp3 87 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+ttemp4 7F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+intlevel0 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+intlevel1 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+intlevel2 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+intlevel3 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+intlevel4 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+intlevel5 0 0 CODE 0 functab C:\Users\faithc\AppData\Local\Temp\scl4.obj
+__LbssCOMMON 0 0 ABS 0 bssCOMMON -
+_InitApp EC8 0 CODE 0 text7 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___bmul@multiplicand 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_OSCCONbits 8F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_Update_ComboPattern_Index CCE 0 CODE 0 text10 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp0 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp1 80 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp2 82 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp3 84 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp4 86 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp5 88 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+wtemp6 7F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hfunctab 0 0 CODE 0 functab -
+__LbssEEDATA 0 0 ABS 0 bssEEDATA -
+_GLOBAL_sub_patterns_column_index 79 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_memcpyee D28 0 CODE 0 text13 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hclrtext 0 0 ABS 0 clrtext -
+__end_of_Initial_Start EC8 0 CODE 0 text2 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_memcpyee D80 0 CODE 0 text13 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_MODE1_PRESSED 40 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_InPhase_copy 22 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_OUTPUT_BUFFER 36 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_MODE2_counter 2B 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_CMCON0 19 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ROM_Sub_Patterns 604 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of___bmul E28 0 CODE 0 text17 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_combo_patterns_column_index 77 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_Selected_Mode_Number 2E 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EECON1 9C 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EECON2 9D 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EEDATA 9A 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_CP$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_combo_patterns_index_copy 32 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lmaintext 0 0 ABS 0 maintext -
+___bmul@multiplier 72 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of___ctoee E8 0 CODE 0 text12 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of___eetoc C6 0 CODE 0 text4 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_SetOUTPUT E7A 0 CODE 0 text1 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_ROM_COMBO_Patterns 604 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_SetOUTPUT 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+memcpyee@ptr 52 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_INTCON B 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_MODE2_LOW_counter 2A 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_Update_Input_Mode_Type 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_INC_EEPROM_MODE F60 0 CODE 0 text9 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_MCLRE$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_SetOUTPUT E28 0 CODE 0 text1 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+start_initialization 20 0 CODE 0 cinit dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_OSCCON 8F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_FOSC$INTOSCIO 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EEprom_Written_Flag 8 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ROM_COMBO_Patterns 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_Dummy_Counter 26 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_WriteEEPROMDefaults 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EEprom_InPhase 0 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+clear_ram0 FF0 0 CODE 0 clrtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__pcstackBANK0 46 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_TRISIO 85 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WDTCON 18 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_ROM_Sub_Patterns 7A8 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___int_sp 0 0 STACK 2 stack C:\Users\faithc\AppData\Local\Temp\scl4.obj
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+_GLOBAL_SYNC_Line_counter 2D 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hcinit 36 0 CODE 0 cinit -
+_bGLOBAL_END_OF_CYCLE_COND1 3C 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_END_OF_CYCLE_COND2 3D 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hidloc 0 0 IDLOC 0 idloc -
+__Hstack 0 0 STACK 2 stack -
+__stringbase 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_INC_EEPROM_MODE F16 0 CODE 0 text9 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hmaintext 0 0 ABS 0 maintext -
+eecpymem@from 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+eecpymem@size 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hcommon 0 0 ABS 0 common -
+__Hconfig 4010 0 CONFIG 0 config -
+___eetoc@addr 54 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___eetoc@data 55 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GPIObits 5 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_IS_PROGRAMMING 3E 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+Initial_Start@i 59 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lcinit 20 0 CODE 0 cinit -
+__Lidloc 0 0 IDLOC 0 idloc -
+__Lstack 0 0 STACK 2 stack -
+__end_ofi1_SetOUTPUT DD4 0 CODE 0 text16 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WriteEEPROMDefaults 98 0 CODE 0 text3 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_INTCONbits B 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hinit 1E 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Linit 1E 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Ltext 0 0 ABS 0 text -
+_bGLOBAL_SYNC_Line_PRESSED 44 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___bmul DD4 0 CODE 0 text17 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+_GIE 5F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WPU 95 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__S0 2008 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S2 0 0 ABS 0 - -
+__S3 2105 0 ABS 0 - -
+_isr 94C 0 CODE 0 text15 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_Dummy_Counter2 27 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_DISABLE_SYNC_Line_PRESSED 3A 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+saved_w 7E 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_OUTPUT_BUFFER_CHANGED 42 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_InPhase 3F 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_WaitForSYNC_PU C6 0 CODE 0 text8 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_sub_patterns_index 33 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_Selected_Mode_Type_copy 30 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_sub_patterns_timer 35 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_isr BC6 0 CODE 0 text15 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_ENABLE_LEDS 3B 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_BOREN$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lintentry 8 0 CODE 0 intentry -
+__stringtab 200 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+reset_vec 0 0 CODE 0 reset_vec C:\Users\faithc\AppData\Local\Temp\scl4.obj
+__size_of_eecpymem 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of___bmul 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__LbssBANK0 0 0 ABS 0 bssBANK0 -
+_GLOBAL_Mode_copy 20 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_FCMEN$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_InitApp 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_INC_EEPROM_MODE 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext10 CCE 0 CODE 0 text10 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext11 FAA 0 CODE 0 text11 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext12 DA 0 CODE 0 text12 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext13 D28 0 CODE 0 text13 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext14 E8 0 CODE 0 text14 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext15 94C 0 CODE 0 text15 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext16 D80 0 CODE 0 text16 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext17 DD4 0 CODE 0 text17 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext18 F60 0 CODE 0 text18 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___ctoee DA 0 CODE 0 text12 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___eetoc B2 0 CODE 0 text4 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__pmaintext BC6 0 CODE 0 maintext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___ctoee@addr 55 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___ctoee@data 54 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lcommon 0 0 ABS 0 common -
+__Lconfig 400E 0 CONFIG 0 config -
+__CFG_CPD$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_WaitForSYNC_PU DA 0 CODE 0 text8 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_MODE2_PRESSED 41 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_WriteEEPROMDefaults B2 0 CODE 0 text3 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_Update_Input_Mode_Type 6E 0 CODE 0 text6 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_CHANGING_PATTERN_Enforce 39 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_OUTPUT_BUFFER_COPY 37 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+stackhi 0 0 ABS 0 - C:\Users\faithc\AppData\Local\Temp\scl4.obj
+stacklo 0 0 ABS 0 - C:\Users\faithc\AppData\Local\Temp\scl4.obj
+_eecpymem 36 0 CODE 0 text5 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of__stringtab 224 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+__pbssCOMMON 76 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+ReWriteEEPROM@i 56 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_bGLOBAL_STEADY_ON 43 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+INC_EEPROM_MODE@Temp_Mode_Data 57 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lend_init 1E 0 CODE 0 end_init -
+__end_of_eecpymem 6E 0 CODE 0 text5 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__pbssEEDATA 0 4200 EEDATA 3 bssEEDATA dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_ofi1_SetOUTPUT 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+end_of_initialization 32 0 CODE 0 cinit dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hintentry 1E 0 CODE 0 intentry -
+_GLOBAL_MODE1_counter 29 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ReWriteEEPROM FAA 0 CODE 0 text11 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lstrings 0 0 ABS 0 strings -
+_GLOBAL_sub_patterns_index_copy 34 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hreset_vec 2 0 CODE 0 reset_vec -
+__HbssBANK0 0 0 ABS 0 bssBANK0 -
+_GLOBAL_CHANNELS_EN_copy 25 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_Update_ComboPattern_Index D28 0 CODE 0 text10 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+main@tempvar1 5A 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext1 E28 0 CODE 0 text1 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext2 E7A 0 CODE 0 text2 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext3 98 0 CODE 0 text3 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext4 B2 0 CODE 0 text4 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext5 36 0 CODE 0 text5 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext6 6E 0 CODE 0 text6 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext7 EC8 0 CODE 0 text7 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext8 C6 0 CODE 0 text8 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__ptext9 F16 0 CODE 0 text9 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_InitApp F16 0 CODE 0 text7 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_Read_Mode_Input FAA 0 CODE 0 text18 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+i1SetOUTPUT@temporaryGPIO 71 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lpowerup 0 0 CODE 0 powerup -
+_GLOBAL_CHANNELS_EN 24 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__pstringtext 200 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_ConfigureOscillator 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lreset_vec 0 0 CODE 0 reset_vec -
+memcpyee@from 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+memcpyee@size 75 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+Initial_Start@read_data 58 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_WDTE$ON 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of__initialization 32 0 CODE 0 cinit dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lfunctab 0 0 CODE 0 functab -
+__Lclrtext 0 0 ABS 0 clrtext -
+_GLOBAL_SYNC_Line_LOW_counter 2C 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_Initial_Start E7A 0 CODE 0 text2 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hend_init 20 0 CODE 0 end_init -
+_Read_Mode_Input F60 0 CODE 0 text18 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_main CCE 0 CODE 0 maintext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_combo_patterns_index 78 0 COMMON 1 bssCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ANSEL 9F 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_CARRY 18 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ConfigureOscillator E8 0 CODE 0 text14 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_EEADR 9B 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Lpa_nodes 0 0 ABS 0 pa_nodes -
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+interrupt_function 8 0 CODE 0 intentry dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+WaitForSYNC_PU@temp001 74 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_Update_ComboPattern_Index 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_ROM_Sub_Patterns_Time 94C 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__pintentry 8 0 CODE 0 intentry dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_isr 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__size_of_ReWriteEEPROM 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+eecpymem@cp 52 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+eecpymem@to 53 0 BANK0 1 cstackBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__initialization 20 0 CODE 0 cinit dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+___bmul@product 71 0 COMMON 1 cstackCOMMON dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__CFG_PWRTE$OFF 0 0 ABS 0 - dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__pbssBANK0 20 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__Hstringtext 0 0 ABS 0 stringtext -
+_bGLOBAL_CHANGING_PATTERN 38 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+__end_of_Update_Input_Mode_Type 98 0 CODE 0 text6 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_MODE1_LOW_counter 28 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_ROM_Sub_Patterns_Time 7A8 0 STRCODE 0 stringtext dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+_GLOBAL_combo_patterns_counter 31 0 BANK0 1 bssBANK0 dist/XC8_PIC12F683/production\81_00017_02_TF12S.production.obj
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text15 0 4A6 94C 35A 2
+cstackCOMMON 1 70 70 A 1
+intentry 0 4 8 77 2
+reset_vec 0 0 0 1 2
+bssBANK0 1 20 20 3B 1
+stringtext 0 100 200 3A6 2
+bssEEDATA 3 0 4200 5 2
+config 0 2007 400E 1 2
